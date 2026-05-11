@@ -104,7 +104,7 @@ deck-config-new-card-sort-order-tooltip-2 =
     
     `Hazarde`: prenas kartojn laŭ hazarda ordo.
 deck-config-new-review-priority = Ordo de novaj/ripetataj
-deck-config-new-review-priority-tooltip = Kie enmeti novajn kartojn rilate al ripetataj kartoj.
+deck-config-new-review-priority-tooltip = Kiam enmeti novajn kartojn rilate al ripetataj kartoj.
 deck-config-interday-step-priority = Ordo de plurtage lernataj/ripetataj
 deck-config-interday-step-priority-tooltip =
     Kie montri (re)lernatajn kartojn, kies intertempo estas pli longa ol tago.
@@ -267,12 +267,58 @@ deck-config-reviews-too-low =
     }
 deck-config-learning-step-above-graduating-interval = La intertempo por lernitaj kartoj estu almenaŭ tiel longa kiel via lasta lernpaŝo.
 deck-config-good-above-easy = La intertempo de facila respondo estu almenaŭ tiel longa kiel la intertempo de lernitaj kartoj.
+deck-config-relearning-steps-above-minimum-interval = La minimuma intertempo de misrespondo estu almenaŭ tiel longa kiel via fina relernpaŝo.
+deck-config-maximum-answer-secs-above-recommended = Anki povas plani viajn ripetojn pli efike, kiam tempo por ĉiu via respondo estas mallonga.
+deck-config-too-short-maximum-interval = Maksimuma intertempo malpli longa ol 6 monatoj ne estas konsilinda.
+deck-config-ignore-before-info = Proksimume { $included }/{ $totalCards } kartoj estos uzataj por plejbonigi parametrojn de FSRS.
 
 ## Selecting a deck
 
+deck-config-which-deck = Por kiu kartaro vi volas montri agordojn?
 
 ## Messages related to the FSRS scheduler
 
+deck-config-updating-cards = Ĝisdatigado de notoj: { $current_cards_count }/{ $total_cards_count }…
+deck-config-invalid-parameters = La liveritaj parametroj de FSRS estas eraraj. Lasu la kampon malplena por uzi implicitajn parametrojn.
+deck-config-not-enough-history = Nesufiĉa historio de ripetoj por plenumi tiun ĉi agon.
+deck-config-must-have-400-reviews =
+    { $count ->
+        [one] Trovis nur { $count } ripeton. Vi devas havi almenaŭ 400 ripetojn por plenumi tiun ĉi agon.
+       *[other] Trovis nur { $count } ripetojn. Vi devas havi almenaŭ 400 ripetojn por plenumi tiun ĉi agon.
+    }
+# Numbers that control how aggressively the FSRS algorithm schedules cards
+deck-config-weights = Parametroj de FSRS
+deck-config-compute-optimal-weights = Plejbonigi parametrojn de FSRS
+deck-config-optimize-button = Plejbonigi nunan agordaron
+# Indicates that a given function or label, provided via the "text" variable, operates slowly.
+deck-config-slow-suffix = { $text } (malrapida)
+deck-config-compute-button = Kalkuli
+deck-config-ignore-before = Ignori kartojn ripetitajn antaŭ ol
+deck-config-time-to-optimize = Pasis kelkan tempon – estas konsilinde uzi nun la butonon “Plejbonigi ĉiujn agordarojn”.
+deck-config-evaluate-button = Taksi
+deck-config-desired-retention = Dezirata memorigado
+deck-config-historical-retention = Historia memorigado
+deck-config-smaller-is-better = Malpli grandaj nombroj indikas pli bonan alĝustigon al via historio de ripetoj.
+deck-config-steps-too-large-for-fsrs = Kiam FSRS estas aktiva, lernpaŝoj de 1 tago aŭ pli longaj estas malkonsilindaj.
+deck-config-get-params = Akiri parametrojn
+deck-config-complete = Farita en { $num }%.
+deck-config-iterations = Iteracio: { $count }…
+deck-config-reschedule-cards-on-change = Replani kartojn je ŝanĝo
+deck-config-fsrs-tooltip =
+    Influas la tutan kolekton
+    
+    La planilo FSRS («Free Spaced Repetition Scheduler») estas alternativo al la kaduka algoritmo SM-2 (SuperMemo 2). Per pli precize determini kiam vi probable forgesos karton, ĝi povas helpi al vi memori pli en la sama kvanto da tempo. Tio ĉi aplikiĝas al ĉiuj antaŭagordoj.
+deck-config-desired-retention-tooltip = Implicite Anki planas montri kartojn tiel, ke vi havas 90% ŝancon por memori karton, kiam ĝi montriĝos ree. Se vi pliigos tiun ĉi valoron, Anki montros kartojn pli ofte por pliigi vian ŝancon por memori ilin. Se vi malpliigos tiun ĉi valoron, Anki montros kartojn malpli ofte kaj vi forgesos pli da ili. Estu singarda dum manipuli tiun ĉi agordon – pli altaj valoroj pliigos vian necesan penon kaj malpli altaj valoroj malfervorigos vin, kiam vi estos forgesanta multan lern-materialon.
+deck-config-desired-retention-tooltip2 = La liverataj valoroj de necesa peno estas proksimumaj. Por precizigi ilin, uzu la simulilon.
+deck-config-historical-retention-tooltip =
+    Kiam parto da via historio de ripetoj mankas, FSRS devas plenigi la mankojn. Implicite ĝi supozos, ke dum tiuj estintaj ripetoj vi memoris 90% de lern-materialo. Se via historia memorigado estis signife pli aŭ malpli granda ol 90%, alĝustigi tiun ĉi agordon ebligos al FSRS pli bone proksimumigi la mankajn ripetojn.
+    
+    Via historio de ripetoj povas esti nekompleta pro du kialoj:
+    1. Vi uzas la agordon “Ignori kartojn ripetitajn antaŭ ol…”.
+    2. Vi forviŝis historion de ripetoj por liberigi spacon aŭ vi enportis materialon el alia period-ripeta programo.
+    
+    La dua kialo estas malofta, do escepte se vi uzis la agordon “Ignori…”, vi ne devas alĝustigi tiun ĉi agordon.
+deck-config-weights-tooltip2 = Parametroj de FSRS influas kiel kartoj estas planataj. Anki komenciĝos kun implicitaj parametroj. Vi povas uzi la suban agordon por plejbonigi la parametrojn por ke ili plej bone kongruu kun via rapido lerni kartarojn, kiuj uzis tiun ĉi agordon.
 
 ## Messages related to the FSRS scheduler’s health check. The health check determines whether the correlation between FSRS predictions and your memory is good or bad. It can be optionally triggered as part of the "Optimize" function.
 

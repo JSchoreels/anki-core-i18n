@@ -15,13 +15,14 @@ studying-cards-buried =
     }
 studying-cards-will-be-automatically-returned-to = As tarxetas devolveranse automaticamente ás súas barallas orixinais unha vez as teñas repasado.
 studying-continue = Continuar
+studying-counts-differ = As contaxes non coinciden coas da lista de barallas porque agochar tarxetas está activado. Algunhas tarxetas foron excluídas e é posíbel que outras ocupasen o seu lugar.
 studying-delete-note = Eliminar a nota
 studying-deleting-this-deck-from-the-deck = Ao eliminar esta baralla da lista de barallas devolveranse todas as tarxetas restantes á súa baralla orixinal.
 studying-easy = Doado
 studying-edit = Editar
-studying-empty = Baleira
+studying-empty = Baleirar
 studying-finish = Terminar
-studying-flag-card = Abandeirar etiqueta
+studying-flag-card = Abandeirar
 studying-good = Ben
 studying-hard = Difícil
 studying-it-has-been-suspended = Foi suspendida.
