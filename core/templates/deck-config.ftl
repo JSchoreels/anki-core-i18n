@@ -319,6 +319,11 @@ deck-config-rwkv-review-enabled-tooltip =
     When a desktop RWKV backend is configured, use its review-time
     retrievability and interval predictions for this preset. Other clients
     continue to use SM2 or FSRS.
+deck-config-rwkv-review-instant-order = Use RWKV-Instant for R ordering
+deck-config-rwkv-review-instant-order-tooltip =
+    When the review sort order is retrievability, use RWKV-Instant
+    retrievability scores for review queue ordering. RWKV-Curve intervals are
+    still used while RWKV review is enabled, even when this is disabled.
 deck-config-rwkv-review-batch-size = RWKV batch size
 deck-config-rwkv-review-batch-size-tooltip =
     Number of cards scored per RWKV model call. 512 is recommended for CPU;
