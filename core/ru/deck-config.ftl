@@ -48,7 +48,7 @@ deck-config-today-only = Только сегодня
 
 ## New Cards section
 
-deck-config-learning-steps = Шаги изучения
+deck-config-learning-steps = Шаги изучаемых
 # Please don't translate `1m`, `2d`
 -deck-config-delay-hint = Интервалы обычно задаются в минутах (например, `1m`) или днях (`2d`), но их можно также задавать в часах (`1h`) и секундах (`30s`).
 deck-config-learning-steps-tooltip = Один или более интервалов, разделённых пробелами. Первый будет назначен, когда вы нажмёте `Снова` на новой карточке (по умолчанию 1 минута). Нажатие `Хорошо` назначит карточке следующий интервал (по умолчанию 10 минут). Когда карточка пройдёт все шаги, она станет повторяемой и появится в другой день. { -deck-config-delay-hint }
@@ -66,7 +66,7 @@ deck-config-new-insertion-order-random-with-v3 =
 
 ## Lapses section
 
-deck-config-relearning-steps = Шаги переучивания
+deck-config-relearning-steps = Шаги переучиваемых
 deck-config-relearning-steps-tooltip = Ноль или более интервалов, разделённых пробелами. По умолчанию, когда вы нажмёте `Снова` на повторяемой карточке, она будет показана снова через 10 минут. Если интервалы не заданы, её срок изменится без перевода в переучиваемые. { -deck-config-delay-hint }
 deck-config-leech-threshold-tooltip = Количество нажатий `Снова`, после которого повторяемая карточка помечается как приставучая. Такие карточки тратят ваше время, и их стоит переделать, удалить или подкрепить мнемоническим правилом.
 # See actions-suspend-card and scheduling-tag-only for the wording
@@ -317,6 +317,10 @@ deck-config-which-deck = Какую колоду вы выбираете?
 
 deck-config-updating-cards = Обновление карт: { $current_cards_count }/{ $total_cards_count }...
 deck-config-invalid-parameters = Указанные параметры FSRS недействительны. Оставьте поле для параметров пустым, чтобы использовать параметры по умолчанию.
+deck-config-placeholder-parameters =
+    Параметры по умолчанию
+    (Периодически нажимайте кнопку «{ deck-config-optimize-button }», чтобы FSRS лучше адаптировался к вашей памяти)
+deck-config-manual-parameter-edit-warning = Изменять параметры следует только с помощью кнопки «Оптимизировать». Редактировать их вручную категорически не рекомендуется.
 deck-config-not-enough-history = Недостаточно повторений для выполнения данной операции.
 deck-config-must-have-400-reviews =
     { $count ->
@@ -377,7 +381,7 @@ deck-config-reschedule-cards-on-change-tooltip =
     Эта настройка определяет, будут ли изменены сроки карточек, когда вы включите FSRS или оптимизируете параметры. По умолчанию карточки не будут изменены: будущие повторения будут использовать новое планирование, но это не приведет к немедленному изменению вашей нагрузки. Если перепланирование включено, сроки карточек будут изменены.
 deck-config-reschedule-cards-warning =
     В зависимости от значения желаемого усвоения, это может привести к тому, 
-    что большое количество карточек станет подлежащими просмотру, поэтому 
+    что большое количество карточек будут в списке на повторение, поэтому 
     не рекомендуется использовать эту опцию при переходе с SM2. Используйте эту опцию 
     осторожно, так как она добавит информацию о повторении к каждой из ваших карточек
     и увеличит размер вашей коллекции.
@@ -408,10 +412,11 @@ deck-config-checking-for-improvement = Проверка на предмет ул
 deck-config-optimizing-preset = Оптимизация конфигурации { $current_count }/{ $total_count }...
 deck-config-fsrs-must-be-enabled = Сначала необходимо включить FSRS.
 deck-config-fsrs-params-optimal = В настоящее время параметры FSRS, вероятно, оптимальны.
+deck-config-fsrs-confirm-save-and-optimize = Это сохранит все остальные внесенные вами изменения. Вы уверены?
 deck-config-fsrs-params-no-reviews = Повторений не обнаружено. Проверьте, что этот пакетный профиль назначен всем колодам и подколодам, которые вы хотите оптимизировать, затем попробуйте еще раз.
 deck-config-wait-for-audio = Ждать аудио
 deck-config-show-reminder = Показать напоминание
-deck-config-answer-again = Ответить «снова»
+deck-config-answer-again = Ответить «Снова»
 deck-config-answer-hard = Ответить «трудно»
 deck-config-answer-good = Ответить «хорошо»
 deck-config-days-to-simulate = Число дней для симуляции
@@ -436,9 +441,8 @@ deck-config-save-options-to-preset-confirm = Перезаписать парам
 # to show the total number of cards that can be recalled or retrieved on a
 # specific date.
 deck-config-fsrs-simulator-radio-memorized = Выученo
-deck-config-fsrs-simulator-radio-ratio = Соотношение время / запоминание
-# $time here is pre-formatted e.g. "10 Seconds" 
-deck-config-fsrs-simulator-ratio-tooltip = { $time } на запоминание карты
+deck-config-fsrs-simulator-radio-efficiency = Эффективность
+deck-config-fsrs-simulator-ratio-tooltip2 = { $time } количество запомненных карточек в час
 
 ## Messages related to the FSRS scheduler’s health check. The health check determines whether the correlation between FSRS predictions and your memory is good or bad. It can be optionally triggered as part of the "Optimize" function.
 
@@ -458,6 +462,9 @@ deck-config-fsrs-good-fit = FSRS хорошо адаптирован к ваше
 
 ## NO NEED TO TRANSLATE. This text is no longer used by Anki, and will be removed in the future.
 
+deck-config-fsrs-simulator-radio-ratio = Соотношение время / запоминание
+# $time here is pre-formatted e.g. "10 Seconds" 
+deck-config-fsrs-simulator-ratio-tooltip = { $time } на запоминание карты
 deck-config-unable-to-determine-desired-retention = Не удалось вычислить минимальное рекомендуемое усвоение
 deck-config-predicted-minimum-recommended-retention = Минимальное рекомендуемое усвоение: { $num }
 deck-config-compute-minimum-recommended-retention = Минимальное рекомендуемое усвоение

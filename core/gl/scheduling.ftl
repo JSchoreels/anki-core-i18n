@@ -78,7 +78,7 @@ scheduling-today-review-limit-reached =
     pendentes de ser revisadas. Para unha óptima memoria, considere
     incrementar o límite diario nas opcións.
 scheduling-today-new-limit-reached =
-    Hai máis tarxetas dispoñíbeis, pero alcanzaches o límite diario.
+    Hai máis tarxetas dispoñíbeis, pero xa alcanzaches o límite diario.
     Podes incrementar o límite nas opcións, pero ten en conta: 
     cantas máis tarxetas introduzas, máis alta será a túa carga de
     traballo a curto prazo.
@@ -86,7 +86,7 @@ scheduling-buried-cards-found = Unha ou máis tarxetas foron agochadas e amosara
 # used in scheduling-buried-cards-found
 # "... you can unbury them if you wish to see..."
 scheduling-unbury-them = desagochalas
-scheduling-how-to-custom-study = Se queres estudar fóra da programación habitual, podes usar a opción { $customStudy }.
+scheduling-how-to-custom-study = Se queres estudar fóra da programación cotiá, podes usar a opción { $customStudy }.
 # used in scheduling-how-to-custom-study
 # "... you can use the custom study feature."
 scheduling-custom-study = estudo personalizado
@@ -141,8 +141,8 @@ scheduling-review = Repaso
 scheduling-reviews = Repasos
 scheduling-seconds = segundos
 scheduling-set-all-decks-below-to = Asignar este grupo de opcións a tódalas barallas embaixo de { $val }?
-scheduling-set-for-all-subdecks = Definir para tódalas barallas secundarias
-scheduling-show-answer-timer = Amosar o temporizador de respostas
+scheduling-set-for-all-subdecks = Definir para todas as barallas secundarias
+scheduling-show-answer-timer = Amosar o temporizador de resposta
 scheduling-show-new-cards-after-reviews = Amosar as novas tarxetas despois dos repasos
 scheduling-show-new-cards-before-reviews = Amosar as novas tarxetas antes dos repasos
 scheduling-show-new-cards-in-order-added = Amosar as novas tarxetas na orde engadida

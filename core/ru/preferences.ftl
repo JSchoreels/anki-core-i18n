@@ -12,7 +12,7 @@ preferences-next-day-starts-at = Начало следующего дня
 preferences-media-is-not-backed-up = Резервная копия медиафайлов не делается. Периодические делайте копию своих файлов.
 preferences-on-next-sync-force-changes-in = При следующей синхронизации перезаписать в одном направлении
 preferences-paste-clipboard-images-as-png = Вставлять изображения из буфера как PNG
-preferences-paste-without-shift-key-strips-formatting = Вставка без форматирования (удерживая Shift — противоположное)
+preferences-paste-without-shift-key-strips-formatting = Вставка без Shift убирает форматирование
 preferences-generate-latex-images-automatically = Создание изображений LaTeX (риск безопасности)
 preferences-latex-generation-disabled = Создание изображений LaTeX отключено в настройках.
 preferences-periodically-sync-media = Периодически синхронизировать медиафайлы
@@ -22,8 +22,8 @@ preferences-scheduling = Расписание
 preferences-show-learning-cards-with-larger-steps = Показывать изучаемые карточки с большими шагами до повторяемых
 preferences-show-next-review-time-above-answer = Показывать время повторения над кнопками ответа
 preferences-spacebar-rates-card = Пробел или Enter для ответа на вопрос
-preferences-show-play-buttons-on-cards-with = Показывать кнопки «Играть» на карточках со звуком
-preferences-show-remaining-card-count = Показывать количество оставшихся карточек
+preferences-show-play-buttons-on-cards-with = Показывать кнопки управления на карточках с аудио
+preferences-show-remaining-card-count = Показывать количество оставшихся
 preferences-some-settings-will-take-effect-after = Некоторые параметры вступят в силу только после перезапуска Anki.
 preferences-tab-synchronisation = Синхронизация
 preferences-synchronize-audio-and-images-too = Синхронизировать аудио и изображения
@@ -40,7 +40,9 @@ preferences-theme-follow-system = Как в системе
 preferences-theme-light = Светлая
 preferences-theme-dark = Тёмная
 preferences-v3-scheduler = Планировщик V3
+preferences-updates = Обновления
 preferences-check-for-updates = Проверять наличие обновлений программы
+preferences-check-for-addon-updates = Обновить дополнения
 preferences-ignore-accents-in-search = Игнорировать диакритические знаки при поиске (медленнее)
 preferences-backup-explanation =
     Anki периодически создает резервную копию ваших коллекций при выходе. После двух дней,
@@ -82,6 +84,7 @@ preferences-ankihub-not-logged-in = В данный момент вы не во�
 preferences-ankiweb-intro = AnkiWeb — это бесплатный сервис, который позволяет синхронизировать данные ваших карточек на всех ваших устройствах и предоставляет возможность восстановить данные в случае поломки или утери устройства.
 preferences-ankihub-intro = AnkiHub обеспечивает совместное редактирование колоды и дополнительные инструменты для обучения. Для доступа к определенным функциям требуется платная подписка.
 preferences-third-party-description = Сторонние сервисы не связаны с Anki и не одобрены ею. Использование этих сервисов может быть платным.
+preferences-experimental-features-tab = Эксперименты
 
 ## URL scheme related
 
